@@ -204,7 +204,7 @@ const Projects = () => {
       description:
         'React-based fantasy sports app with interactive player cards, leaderboards, and live score updates. Integrated RESTful sports APIs with responsive CSS Grid/Flexbox UI.',
       image: FantasyGridiron,
-      tags: ['React', 'RESTful API'],
+      tags: ['React', 'RESTful API', 'JavaScript'],
       githubLink: 'https://github.com/ChesterHuey1/',
     },
     {
