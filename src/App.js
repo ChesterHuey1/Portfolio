@@ -184,7 +184,7 @@ const Projects = () => {
       description:
         'Playlist optimization tool using Spotify API, HTML, CSS, and JavaScript. Analyzes user mood and top tracks to generate personalized music recommendations with CI/CD via GitHub Actions.',
       image: MelodyMap,
-      tags: ['React','JavaScript', 'Spotify API', 'GitHub Actions'],
+      tags: ['React','JavaScript', 'Spotify API', 'GitHub Actions', 'CI/CD'],
       githubLink: 'https://github.com/ChesterHuey1/',
     },
     {
