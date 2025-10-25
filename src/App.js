@@ -224,7 +224,7 @@ const Projects = () => {
       description:
         'Developed a Restaurant picker for food near UC San Diego Campus with the ability to randomize or query certain foods',
       image: Powell,
-      tags: ['HTML', 'CSS', 'JavaScript','Github Actions', 'Linting', 'Jest'],
+      tags: ['HTML', 'CSS', 'JavaScript','Github Actions', 'Linting', 'Jest', 'PlayWright'],
       githubLink: 'https://github.com/ChesterHuey1/',
     },
   ];
