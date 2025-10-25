@@ -6,6 +6,9 @@ import StyleSwipe from './assets/StyleSwipe.png';
 import FantasyGridiron from './assets/FantasyGridiron.png';
 import Weather_Way from './assets/Weather_Way.png';
 import Powell from './assets/Powell.png';
+import SF_State from './assets/SF_State.png';
+import Ivern from './assets/Ivern.png';
+import Delaget from './assets/Delaget.jpeg';
 
 // Navbar Component
 const Navbar = () => {
@@ -126,7 +129,8 @@ const Experience = () => {
       duration: 'January 2024 - Present',
       location: 'San Francisco, CA',
       description: 'Led development of internal knowledge aggregator tool unifying Google Drive, Microsoft (Outlook/OneDrive), and Slack. Reduced search time by 50% through centralized indexing and OAuth integration across platforms.',
-      achievements: []
+      achievements: [],
+      logo: Ivern
     },
     {
       id: 2,
@@ -135,7 +139,8 @@ const Experience = () => {
       duration: 'June 2023 - August 2023',
       location: 'San Francisco, CA',
       description: 'Deployed 8-bit quantized MobileNetV2 CNN on Sony Spresense microcontroller with PyTorch, achieving 85% accuracy on 500K+ images. Customized L1-norm pruning to reduce model size by 70% and latency by 60%.',
-      achievements: []
+      achievements: [],
+      logo: SF_State
     },
     {
       id: 3,
@@ -144,7 +149,8 @@ const Experience = () => {
       duration: 'February 2023 - March 2023',
       location: 'San Francisco, CA',
       description: 'Developed interactive dashboards with React and Chart.js for restaurant owners to visualize sales, staffing, and inventory data. Cleaned and normalized API responses for consistency.',
-      achievements: []
+      achievements: [],
+      logo: Delaget
     },
   ];
 
@@ -154,18 +160,27 @@ const Experience = () => {
         <h2 className="text-3xl font-bold text-gray-900 mb-10">Experience</h2>
         <div className="space-y-8">
           {experiences.map((exp) => (
-            <div key={exp.id} className="bg-white rounded-lg p-6 border border-gray-200">
-              <div className="flex justify-between items-start mb-2">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
-                  <p className="text-gray-700 font-medium">{exp.company}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm text-gray-600">{exp.duration}</p>
-                  <p className="text-sm text-gray-500">{exp.location}</p>
-                </div>
+            <div key={exp.id} className="bg-white rounded-lg p-6 border border-gray-200 flex gap-6">
+              <div className="flex-shrink-0">
+                <img
+                  src={exp.logo}
+                  alt={`${exp.company} logo`}
+                  className="w-16 h-16 object-contain rounded-lg"
+                />
               </div>
-              <p className="text-gray-700 mt-3 leading-relaxed">{exp.description}</p>
+              <div className="flex-1">
+                <div className="flex justify-between items-start mb-2">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
+                    <p className="text-gray-700 font-medium">{exp.company}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm text-gray-600">{exp.duration}</p>
+                    <p className="text-sm text-gray-500">{exp.location}</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 mt-3 leading-relaxed">{exp.description}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -224,7 +239,7 @@ const Projects = () => {
       description:
         'Developed a Restaurant picker for food near UC San Diego Campus with the ability to randomize or query certain foods',
       image: Powell,
-      tags: ['HTML', 'CSS', 'JavaScript','Github Actions', 'Linting', 'Jest', 'Playwright'],
+      tags: ['HTML', 'CSS', 'JavaScript','Github Actions', 'Linting', 'Jest', 'PlayWright'],
       githubLink: 'https://github.com/ChesterHuey1/',
     },
   ];
