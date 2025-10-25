@@ -121,6 +121,16 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
+      company: 'Ivern',
+      role: 'Chief Technology Officer',
+      duration: 'January 2024 - Present',
+      location: 'San Francisco, CA',
+      description: 'Led development of internal knowledge aggregator tool unifying Google Drive, Microsoft (Outlook/OneDrive), and Slack. Reduced search time by 50% through centralized indexing and OAuth integration across platforms.',
+      achievements: [        
+      ]
+    },
+    {
+      id: 2,
       company: 'San Francisco State University - Mobile and Intelligent Computing Lab',
       role: 'Research Assistant',
       duration: 'June 2023 - August 2023',
@@ -129,7 +139,7 @@ const Experience = () => {
       achievements: []
     },
     {
-      id: 2,
+      id: 3,
       company: 'Delaget',
       role: 'Software Development Consultant',
       duration: 'February 2023 - March 2023',
@@ -138,41 +148,6 @@ const Experience = () => {
       achievements: []
     },
   ];
-
-  return (
-    <section id="experience" className="py-16 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-900 mb-10">Selected Experience</h2>
-        <div className="space-y-8">
-          {experiences.map((exp) => (
-            <div key={exp.id} className="bg-white rounded-lg p-8 shadow-sm border border-gray-200">
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4">
-                <div>
-                  <h3 className="text-xl font-bold text-gray-900">
-                    {exp.role} <span className="text-gray-600 font-normal">at</span> {exp.company}
-                  </h3>
-                  <p className="text-gray-600 text-sm mt-1">{exp.location}</p>
-                </div>
-                <span className="text-gray-600 text-sm mt-2 sm:mt-0">{exp.duration}</span>
-              </div>
-              <p className="text-gray-700 mb-4">{exp.description}</p>
-              {exp.achievements.length > 0 && (
-                <ul className="space-y-2">
-                  {exp.achievements.map((achievement, idx) => (
-                    <li key={idx} className="text-gray-700 flex items-start">
-                      <span className="text-gray-400 mr-3 mt-1">•</span>
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
 
 // Projects Section
 const Projects = () => {
@@ -194,7 +169,7 @@ const Projects = () => {
       description:
         'Fashion social media platform with TypeScript and Tailwind CSS. Express API integration, and E2E testing using Playwright.',
       image: StyleSwipe,
-      tags: ['React','TypeScript', 'Next.js', 'MongoDB','Express', 'Playwright', 'Tailwind CSS'],
+      tags: ['React','TypeScript', 'Next.js', 'MongoDB','Express', 'Tailwind CSS'],
       githubLink: 'https://github.com/ChesterHuey1/',
     },
     {
