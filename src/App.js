@@ -103,7 +103,7 @@ const About = () => {
                 I am a Computer Science student passionate about building impactful products to make people's lives better with software
               </p>
               <p>
-              I develop full-stack web applications with a focus on building reliable, responsive front-end interfaces that simplify complex ideas. I’m also interested in applying AI and deep learning to create smarter, data-driven web solutions that enhance functionality and interactivity.
+              I develop full-stack web applications with a focus on building reliable, responsive front-end interfaces that simplify complex ideas. I'm also interested in applying AI and deep learning to create smarter, data-driven web solutions that enhance functionality and interactivity.
               </p>
               <p>
                 I am actively pursuing opportunities in Software Engineering, and am eager to showcase my skills and gain insights into industry-standard practices.
@@ -126,8 +126,7 @@ const Experience = () => {
       duration: 'January 2024 - Present',
       location: 'San Francisco, CA',
       description: 'Led development of internal knowledge aggregator tool unifying Google Drive, Microsoft (Outlook/OneDrive), and Slack. Reduced search time by 50% through centralized indexing and OAuth integration across platforms.',
-      achievements: [        
-      ]
+      achievements: []
     },
     {
       id: 2,
@@ -148,6 +147,32 @@ const Experience = () => {
       achievements: []
     },
   ];
+
+  return (
+    <section id="experience" className="py-16 bg-gray-50">
+      <div className="max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-bold text-gray-900 mb-10">Experience</h2>
+        <div className="space-y-8">
+          {experiences.map((exp) => (
+            <div key={exp.id} className="bg-white rounded-lg p-6 border border-gray-200">
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
+                  <p className="text-gray-700 font-medium">{exp.company}</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm text-gray-600">{exp.duration}</p>
+                  <p className="text-sm text-gray-500">{exp.location}</p>
+                </div>
+              </div>
+              <p className="text-gray-700 mt-3 leading-relaxed">{exp.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // Projects Section
 const Projects = () => {
@@ -199,7 +224,7 @@ const Projects = () => {
       description:
         'Developed a Restaurant picker for food near UC San Diego Campus with the ability to randomize or query certain foods',
       image: Powell,
-      tags: ['HTML', 'CSS', 'JavaScript','Github Actions', 'Linting', 'Jest', 'PlayWright'],
+      tags: ['HTML', 'CSS', 'JavaScript','Github Actions', 'Linting', 'Jest', 'Playwright'],
       githubLink: 'https://github.com/ChesterHuey1/',
     },
   ];
