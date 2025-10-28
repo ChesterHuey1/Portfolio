@@ -301,7 +301,7 @@ const Footer = () => {
     <footer className="py-8 bg-gray-50 border-t border-gray-200">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <p className="text-gray-600 text-sm">
-          © 2024 Chester Huey. Built with React & Tailwind CSS.
+          © 2024 Chester Huey: Built with React & Tailwind CSS.
         </p>
       </div>
     </footer>
