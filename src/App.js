@@ -209,7 +209,7 @@ const Projects = () => {
       description:
         'Fashion social media platform with TypeScript and Tailwind CSS. Express API integration, and E2E testing using Playwright.',
       image: StyleSwipe,
-      tags: ['React','TypeScript', 'Next.js', 'MongoDB','Express', 'Tailwind CSS'],
+      tags: ['React','TypeScript', 'Node.js', 'MongoDB','Express', 'Tailwind CSS'],
       githubLink: 'https://github.com/ChesterHuey1/',
     },
     {
